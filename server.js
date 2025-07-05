@@ -10,8 +10,8 @@ app.use(express.json());
 
 // Gunakan rute yang sudah didefinisikan
 // Semua rute di dalam authRoutes akan memiliki awalan /api/auth
-app.use("/api/auth", authRoutes);
-app.use("/api/informasi", informasiRoutes);
+app.use("/auth", authRoutes);
+app.use("/informasi", informasiRoutes);
 
 // Rute dasar
 app.get("/", (req, res) => {
